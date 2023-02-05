@@ -33,6 +33,8 @@ export default function Home() {
         <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=ZFWw&width=670&height=475" scrolling="no" frameBorder={0} style={fredStyle} loading="lazy"></iframe>
         <br />
         <br />
+
+        <div className={styles.description}>
         {`“The shotgun marriage of Friedrich von Hayek and Karl Polanyi, blessed by John Maynard Keynes, that helped raise the post–World War II North Atlantic developmental social democracy was as good as we have so far gotten. But it failed its own sustainability test, partly because a single generation of rapid growth raised the bar high, and partly because Polanyian rights required stability, the treating of equals equally, and the treating of perceived unequals unequally in ways that neither the Hayekian-Schumpeterian market economy of creative destruction nor the Polanyian social democratic society of universal egalitarian social insurance rights could ever deliver.”`}
         <br />
         <br />
@@ -41,11 +43,23 @@ export default function Home() {
         <br />
         <br />
         {`For a \"good money\" try `} <a href="https://www.getmonero.org/library/Zero-to-Monero-1-0-0.pdf">something actually anonymous</a>.
+        </div>
 
       </main>
 
       <footer className={styles.footer}>
-        {"\"Inspired\" by:"} <a href="https://wtfhappenedin1971.com/">WTF Happened in 1971?</a>
+        <div>
+          {"\"Inspired\" by:"} <a href="https://wtfhappenedin1971.com/">WTF Happened in 1971?</a>
+        </div>
+
+        <div className={styles.footerContent}>
+          <a href="https://wtfhappenedin1971.com/">Newsletter</a>
+          <a href="https://wtfhappenedin1971.com/">Get WTF 1791 Merch</a>
+          <hr />
+          <a href="https://wtfhappenedin1971.com/">Support Our Research</a>
+          <a href="https://wtfhappenedin1971.com/">Discussions</a>
+        </div>
+        
       </footer>
     </div>
   )
