@@ -1,56 +1,51 @@
 import Image from 'next/image'
+import Script from 'next/script'
 import styles from './page.module.css'
+
+const fredStyle = {
+  width: '670px',
+  height: '525px',
+  overflow: 'hidden',
+}
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
+          WTF Happened in 1791?
         </h1>
+        <div className="embed-container">
+        <br />
+        <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=X4TX&width=670&height=475" scrolling="no" frameBorder={0} style={fredStyle} loading="lazy"></iframe>
+        </div>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
+        For some graphs that actually do not matter:
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
+        <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=ZFWI&width=670&height=475" scrolling="no" frameBorder={0} style={fredStyle} loading="lazy"></iframe>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
+        <p className={styles.description}>
+        And all together:
+        </p>
 
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
+        <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=ZFWw&width=670&height=475" scrolling="no" frameBorder={0} style={fredStyle} loading="lazy"></iframe>
+        <br />
+        <br />
+        {`“The shotgun marriage of Friedrich von Hayek and Karl Polanyi, blessed by John Maynard Keynes, that helped raise the post–World War II North Atlantic developmental social democracy was as good as we have so far gotten. But it failed its own sustainability test, partly because a single generation of rapid growth raised the bar high, and partly because Polanyian rights required stability, the treating of equals equally, and the treating of perceived unequals unequally in ways that neither the Hayekian-Schumpeterian market economy of creative destruction nor the Polanyian social democratic society of universal egalitarian social insurance rights could ever deliver.”`}
+        <br />
+        <br />
+        {`- Slouching Towards Utopia, J. Bradford DeLong;`}
+
+        <br />
+        <br />
+        {`For a \"good money\" try `} <a href="https://www.getmonero.org/library/Zero-to-Monero-1-0-0.pdf">something actually anonymous</a>.
+
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        {"\"Inspired\" by:"} <a href="https://wtfhappenedin1971.com/">WTF Happened in 1971?</a>
       </footer>
     </div>
   )
