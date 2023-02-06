@@ -1,3 +1,4 @@
+import { quote, quoteSource } from './manualConstants'
 import styles from './page.module.css'
 
 const fredStyle = {
@@ -29,10 +30,10 @@ export default function Home() {
         <br />
 
         <div className={styles.description}>
-        {`“The shotgun marriage of Friedrich von Hayek and Karl Polanyi, blessed by John Maynard Keynes, that helped raise the post–World War II North Atlantic developmental social democracy was as good as we have so far gotten. But it failed its own sustainability test, partly because a single generation of rapid growth raised the bar high, and partly because Polanyian rights required stability, the treating of equals equally, and the treating of perceived unequals unequally in ways that neither the Hayekian-Schumpeterian market economy of creative destruction nor the Polanyian social democratic society of universal egalitarian social insurance rights could ever deliver.”`}
+        {quote}
         <br />
         <br />
-        {`- Slouching Towards Utopia, J. Bradford DeLong;`}
+        {`- ${quoteSource}`}
 
         <br />
         <br />

@@ -5,7 +5,7 @@ export default function Donations() {
             Donations
         </h1>
         
-        {`At this point, you've probably realized that this is all a parody of
+        {`At this point, you've probably realized that this is all a (poorly done) parody of
         the "WTF Happened in 1971?" website. We're not actually trying to
         raise money for research. We're just trying to make a point about
         the absurdity of the "WTF Happened in 1971?" website. If you'd like
