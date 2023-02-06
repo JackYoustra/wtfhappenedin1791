@@ -53,11 +53,11 @@ export default function Home() {
         </div>
 
         <div className={styles.footerContent}>
-          <a href="https://wtfhappenedin1971.com/">Newsletter</a>
-          <a href="https://wtfhappenedin1971.com/">Get WTF 1791 Merch</a>
+          <a href="https://jackyoustra.com/">Newsletter</a>
+          <a href="https://www.nber.org/subscribe">Get WTF 1791 Merch</a>
           <hr />
-          <a href="https://wtfhappenedin1971.com/">Support Our Research</a>
-          <a href="https://wtfhappenedin1971.com/">Discussions</a>
+          <a href="/donations">Support Our Research</a>
+          <a href="https://www.igmchicago.org/igm-economic-experts-panel/">Discussions</a>
         </div>
         
       </footer>
